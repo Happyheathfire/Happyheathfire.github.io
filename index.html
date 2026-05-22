@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的全球网站导航</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .search-box {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px 18px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .category {
+      margin-bottom: 36px;
+    }
+
+    .category h2 {
+      font-size: 24px;
+      border-left: 6px solid #2a5298;
+      padding-left: 12px;
+      margin-bottom: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      text-decoration: none;
+      color: #222;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      color: #2a5298;
+    }
+
+    .card strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .card span {
+      font-size: 13px;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>我的全球网站导航</h1>
+    <p>一个属于自己的学习、信息、AI 与自媒体入口</p>
+  </header>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="搜索网站，例如 YouTube、AI、财经、新闻..." />
+  </div>
+
+  <main class="container">
+
+    <section class="category">
+      <h2>搜索与信息</h2>
+      <div class="grid">
+        <a class="card" href="https://www.google.com" target="_blank">
+          <strong>Google</strong>
+          <span>全球搜索引擎</span>
+        </a>
+        <a class="card" href="https://www.wikipedia.org" target="_blank">
+          <strong>Wikipedia</strong>
+          <span>百科知识</span>
+        </a>
+        <a class="card" href="https://www.bing.com" target="_blank">
+          <strong>Bing</strong>
+          <span>微软搜索</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>视频与自媒体</h2>
+      <div class="grid">
+        <a class="card" href="https://www.youtube.com" target="_blank">
+          <strong>YouTube</strong>
+          <span>全球视频平台</span>
+        </a>
+        <a class="card" href="https://www.tiktok.com" target="_blank">
+          <strong>TikTok</strong>
+          <span>短视频平台</span>
+        </a>
+        <a class="card" href="https://www.instagram.com" target="_blank">
+          <strong>Instagram</strong>
+          <span>图片与短视频</span>
+        </a>
+        <a class="card" href="https://www.x.com" target="_blank">
+          <strong>X</strong>
+          <span>社交媒体</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>AI 工具</h2>
+      <div class="grid">
+        <a class="card" href="https://chat.openai.com" target="_blank">
+          <strong>ChatGPT</strong>
+          <span>AI 对话助手</span>
+        </a>
+        <a class="card" href="https://claude.ai" target="_blank">
+          <strong>Claude</strong>
+          <span>AI 助手</span>
+        </a>
+        <a class="card" href="https://www.perplexity.ai" target="_blank">
+          <strong>Perplexity</strong>
+          <span>AI 搜索</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>编程与开发</h2>
+      <div class="grid">
+        <a class="card" href="https://github.com" target="_blank">
+          <strong>GitHub</strong>
+          <span>代码托管平台</span>
+        </a>
+        <a class="card" href="https://developer.mozilla.org" target="_blank">
+          <strong>MDN</strong>
+          <span>网页开发文档</span>
+        </a>
+        <a class="card" href="https://stackoverflow.com" target="_blank">
+          <strong>Stack Overflow</strong>
+          <span>程序员问答社区</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>财经与商业</h2>
+      <div class="grid">
+        <a class="card" href="https://www.bloomberg.com" target="_blank">
+          <strong>Bloomberg</strong>
+          <span>全球财经新闻</span>
+        </a>
+        <a class="card" href="https://www.cnbc.com" target="_blank">
+          <strong>CNBC</strong>
+          <span>商业与市场</span>
+        </a>
+        <a class="card" href="https://finance.yahoo.com" target="_blank">
+          <strong>Yahoo Finance</strong>
+          <span>股票与市场数据</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 我的全球导航门户 | Built with HTML, CSS and JavaScript
+  </footer>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".card");
+
+    searchInput.addEventListener("input", function () {
+      const keyword = searchInput.value.toLowerCase();
+
+      cards.forEach(function (card) {
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(keyword)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
